@@ -26,17 +26,30 @@
 		<section class="slider">
 			<img src="images/vengadores-l-01.jpg" alt="vengadores"/>
 			<nav>
-				<button class="navigation"><img src="" alt="left_arrow">anterior</button>
-				<button class="navigation"><img src="" alt="right_arrow">siguiente</button>
+				<button class="navigation"><span class="left-arrow"></span>anterior</button>
+				<button class="navigation"><span class="right-arrow"></span> siguiente</button>
 			</nav>
 			
 			<ul>
 				<li><h1>Los Vengadores: La Era de Ultrón</h1></li>
 				<li>
 					<ul>
-						<li><time>2015</time></li>
+						<li><time datetime="2015">2015</time></li>
 						<li>+18 HD 1h 34 min</li>
-						<li class="rate"></li>
+						<li class="rate">
+							<form>
+						        <input type="radio"  id="group-1-0" value="5" />
+						        <label for="group-1-0"></label>
+						        <input type="radio" id="group-1-1" value="4" />
+						        <label for="group-1-1"></label>
+						        <input type="radio" id="group-1-2"  value="3" />
+						        <label for="group-1-2"></label>
+						        <input type="radio" id="group-1-3" value="2" />
+						        <label for="group-1-3"></label>
+						        <input type="radio" id="group-1-4"  value="1" />
+						        <label for="group-1-4"></label>
+						    </form>
+						</li>
 					</ul>
 				</li>
 				<li>
@@ -55,10 +68,228 @@
 		</section>
 		<!--/hero section -->
 		<!--catalogue section-->
-		<section></section>
+
+		<section class="catalogue">
+			<form >
+				<fieldset>
+					<select>
+						<option>Tipo</option>
+						<option>Tipo1</option>
+						<option>Tipo2</option>
+					</select>
+					<select>
+						<option>G&eacute;nero</option>
+						<option>G&eacute;nero1</option>
+						<option>G&eacute;nero2</option>
+					</select>
+					<input type="checkbox">
+					<span>Solo novedades</span>
+					Ordenar por
+					<select>
+						<option >M&aacute;s populares</option>
+						<option >M&aacute;s populares 1</option>
+						<option >M&aacute;s populares 2</option>
+					</select>
+
+				</fieldset>
+
+			</form>	
+			<hr>
+			<ul>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/127-dias.jpg" alt="127 horas"></dt>
+					  	<dd><h3><strong>127 horas</strong></h3></dd>
+					 	 <dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  	<dd><a href="#">M&aacute;s</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/amelie.jpg" alt="amelie"></dt>
+					  	<dd><h3><strong>Amelie</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd><dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/american-beauty.jpg" alt="american-beauty"></dt>
+					  	<dd><h3><strong>American beaty</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd><dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/apocalypse-now.jpg" alt="apocalyse"></dt>
+					  	<dd><h3><strong>Apocalyse Now</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd><dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/avatar.jpg" alt="avatar"></dt>
+					  	<dd><h3><strong>Avatar</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd><dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li><li>
+					<dl>
+					  	<dt><img src="images/posters/batman.jpg" alt="batman"></dt>
+					  	<dd><h3><strong>Batman</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd><dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<hr>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/cisne-negro.jpg" alt="cisne-negro"></dt>
+					  	<dd><h3><strong>Cisne Negro</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd><dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/dracula.jpg" alt="dracula"></dt>
+					  	<dd><h3><strong>Dr&aacute;cula</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/el-silencio-de-los-corderos.jpg" alt="silencio-corderos"></dt>
+					  	<dd><h3><strong>El Silencio de los Corderos</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/et.jpg" alt="et"></dt>
+					  	<dd><h3><strong>E.T.</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/her.jpg" alt="her"></dt>
+					  	<dd><h3><strong>Her</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/malefica.jpg" alt="malefica"></dt>
+					  	<dd><h3><strong>Mal&eacute;fica</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<hr>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/parque-jurasico.jpg" alt="parque-jurasico"></dt>
+					  	<dd><h3><strong>Parque Jur&aacute;sico</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  	<dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/selma.jpg" alt="selma"></dt>
+					  	<dd><h3><strong>Selma</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd><dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/sinsajo.jpg" alt="sinsajo"></dt>
+					  	<dd><h3><strong>Sinsajo</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  	<dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/tintin.jpg" alt="tintin"></dt>
+					  	<dd><h3><strong>Tint&iacute;n</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/totoro.jpg" alt="totoro"></dt>
+					  	<dd><h3><strong>Totoro</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+
+					</dl>
+				</li>
+				<li>
+					<dl>
+					  	<dt><img src="images/posters/vengadores.jpg" alt="vengadores"></dt>
+					  	<dd><h3><strong>Vengadores</strong></h3></dd>
+					  	<dd><time datetime="2010">2010</time></dd>
+					  	<dd><span>loren ipsum dolor dit amet consecteur...</span></dd>
+					  <dd><a href="#">M&aacute;s</a></dd>
+						
+					</dl>
+				</li>
+				<li>
+					<hr>
+				</li>
+				
+				
+			</ul>
+			<div>
+				<p>Tenemos 4526 referencias</p>
+				<button type="button"> VER M&aacute;S</button>
+			</div>
+
+		</section>
 		<!--/catalogue section -->
 		<!-- publishes section-->
-		<section></section>
+		<section class="">
+			
+		</section>
 		<!-- /publishes section-->
 		<!--steps-->
 		<section></section>
@@ -79,7 +310,7 @@
 				<li>Contacto</li>
 				<li><i lang="en">English site</i></li>
 				<li><i lang="de">Deutsch Website</i></li>
-				<li>Site <i lang="fran">français</i></li>
+				<li>Site <i lang="fr">français</i></li>
 			</ul>
 			<h3>SÍGUENOS</h3>
 			<ul>
@@ -90,6 +321,7 @@
 			</ul>
 			<h3>JALEO</h3>
 			<hr>
+			
 			<ul>
 				<li>&copy; Jaleo de España S.A.</li>
 				<li>Calle del Rey, 23</li>
@@ -97,6 +329,7 @@
 				<li>0034 555 55 65 85</li>
 				<li><a href="mailto:infor@jaleoapp.es">info@jaleoapp.es</a></li>
 			</ul>
+			
 		</footer>
 		<!--/main footer-->
 	</body>
