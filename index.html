@@ -73,13 +73,15 @@
 			<section class="catalogue">
 				<form >
 					<fieldset>
-						<legend>filtrar aqui</legend>
-						<select>
+						<legend>Filtrar aqui</legend> <!--because we have two select for one legend-->
+						<label for="type">Filtrar por</label>
+						<select id="type">
 							<option>Tipo</option>
 							<option>Tipo1</option>
 							<option>Tipo2</option>
 						</select>
-						<select>
+						<label for="genero">genero</label>
+						<select id="genero">
 							<option>G&eacute;nero</option>
 							<option>G&eacute;nero1</option>
 							<option>G&eacute;nero2</option>
@@ -87,16 +89,22 @@
 						<label for="new-shoots">Solo novedades
 							<input type="checkbox" id="new-shoots">
 						</label>
-						
-						
-						Ordenar por
-						<select>
+					</fieldset>
+				
+					<fieldset>
+								
+						<label for="popular">Ordenar por</label>
+						<select id="popular">
 							<option >M&aacute;s populares</option>
 							<option >M&aacute;s populares 1</option>
 							<option >M&aacute;s populares 2</option>
 						</select>
 
 					</fieldset>
+					<fieldset>
+						<input type="submit">
+					</fieldset>
+					
 
 				</form>	
 				<hr>
