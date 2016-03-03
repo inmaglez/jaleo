@@ -1,43 +1,388 @@
-!!! 5
+!!!5
 %html(lang="es")
-	%head
-		%meta(charset="utf-8")
-		%title Jaleo videoclub online
-		%meta(name="author" content="Jaleo videoclub web")
-		%meta(name="description" content="Jaleo videoclub web")
-		%link(rel="shortcut icon" href="/favicon.ico")
-		%link(rel="apple-touch-icon" href="#")
-	%body
-		%a(href="#main")
-		%header
-			%nav
-				%ul
-					%li
-						%a(href="index.html") Jaleo
-					%li
-						%a(href="#") Películas
-					%li
-						%a(href="#") Series
-					
-					%li
-						%a(href="#") Explora
-					%li
-						%a(href="#") Iniciar sesion
-		.main(role="main")
-			%section.slider
-				%h1 Los Vengadores: La era de Ultrón
-				%ul
-					%li
-						%time(datetime="2015") 2015
-					%li
-						<abbr title="mayores de">+</abbr>18
-					%li.rate
-						<abbr title="High Definition" lang="en">HD</abbr>
-					%li
-						%time(datetime="PT1H39M") 
-							1 <abbr title="hora">h</abbr> 34 <abbr title="minutes">min</abbr>
-					%li	
-						2,5 sobre 5
-		%footer	
-
+  %head
+    %meta(charset="utf-8")
+    %title Jaleo videoclub online
+    %meta(content="Inma Glez" name="author")
+    %meta(content="Jaleo videoclub web" name="description")
+    %link(href="/favicon.ico" rel="shortcut icon")
+    %link(href="#" rel="apple-touch-icon")
+  %body
+    %a(href="#main") skip to content
+    / header
+    %header
+      %nav
+        %ul
+          %li
+            %a(href="index.html") Jaleo
+          %li
+            %a(href="#") Películas
+          %li
+            %a(href="#") Series
+          %li
+            %a(href="#") Explora
+          %li
+            %a(href="#") Iniciar sesion
+    / /header
+    / section: hero section
+    %section.slider
+      %h1 Los Vengadores: La Era de Ultrón
+      %ul
+        %li
+          %time(datetime="2015") 2015
+        %li
+          <abbr title="mayores de">+</abbr>18
+        %li.rate
+          <abbr lang="en" title="High Definition"> HD</abbr>
+        %li
+          %time(datetime="PT1H39M")
+            1
+            %abbr(title="hora") h
+            34
+            %abbr(title="minutes") min
+        %li 2,5 sobre 5
+      %ul
+        %li
+          %a(href="#")
+            MÁS INFO
+        %li
+          %a(href="#")
+            VER AHORA
+            %strong 2,95 &euro;
+      %ul
+        %li.navigation anterior
+        %li.navigation siguiente
+    #main(role="main")
+      %h2 Catálogo de películas Jaleo
+      / catalogue section
+      %section.catalogue
+        %form
+          %fieldset
+            %legend Filtrar aqui
+            / because we have two select for one legend
+            %label(for="type") Filtrar por
+            %select#type
+              %option Tipo
+              %option Tipo1
+              %option Tipo2
+            %label(for="genero") genero
+            %select#genero
+              %option G&eacute;nero
+              %option G&eacute;nero1
+              %option G&eacute;nero2
+            %label(for="new-shoots")
+              Solo novedades
+              %input#new-shoots(type="checkbox")
+          %fieldset
+            %label(for="popular") Ordenar por
+            %select#popular
+              %option M&aacute;s populares
+              %option M&aacute;s populares 1
+              %option M&aacute;s populares 2
+          %fieldset
+            %input(type="submit")
+        %hr
+          %ul
+            %li
+              %a(href="#")
+                %img(alt="127 horas" src="images/posters/127-dias.jpg")
+                  %h3
+                    %strong 127 horas
+                  %time(datetime="2010") 2010
+              %ul
+                %li loren ipsum dolor dit amet consecteur...
+                %li
+                  %a(href="#") M&aacute;s
+                %li 2,5 sobre 5
+                %li
+                  %a(href="#") 2,95€
+            %li
+              %img(alt="amelie" src="images/posters/amelie.jpg")
+                %h3
+                  %strong Amelie
+                %time(datetime="2001") 2001
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              / repetir a partir de aqui
+              %img(alt="image about a girl.." src="images/posters/american-beauty.jpg")
+                %h3
+                  %strong American beauty
+                %time(datetime="1999") 1999
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="apocalyse" src="images/posters/apocalypse-now.jpg")
+                %h3
+                  %strong Apocalyse Now
+                %time(datetime="1979") 1979
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="avatar" src="images/posters/avatar.jpg")
+                %h3
+                  %strong Avatar
+                %time(datetime="2009") 2009
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="batman" src="images/posters/batman.jpg")
+                %h3
+                  %strong Batman
+                %time(datetime="1966") 1966
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %hr
+            %li
+              %img(alt="cisne-negro" src="images/posters/cisne-negro.jpg")
+                %h3
+                  %strong Cisne Negro
+                %time(datetime="2010") 2010
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="dracula" src="images/posters/dracula.jpg")
+                %h3
+                  %strong Dr&aacute;cula
+                %time(datetime="1931") 1931
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="silencio-corderos" src="images/posters/el-silencio-de-los-corderos.jpg")
+                %h3
+                  %strong El Silencio de los Corderos
+                %time(datetime="1991") 1991
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="et" src="images/posters/et.jpg")
+                %h3
+                  %strong E.T.
+                %time(datetime="1982") 1982
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="her" src="images/posters/her.jpg")
+                %h3
+                  %strong Her
+                %time(datetime="2013") 2013
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="malefica" src="images/posters/malefica.jpg")
+                %h3
+                  %strong Mal&eacute;fica
+                %time(datetime="2014") 2014
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %hr
+            %li
+              %img(alt="parque-jurasico" src="images/posters/parque-jurasico.jpg")
+                %h3
+                  %strong Parque Jur&aacute;sico
+                %time(datetime="1993") 1993
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="selma" src="images/posters/selma.jpg")
+                %h3
+                  %strong Selma
+                %time(datetime="2014") 2014
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="sinsajo" src="images/posters/sinsajo.jpg")
+                %h3
+                  %strong Sinsajo
+                %time(datetime="2014") 2014
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="tintin" src="images/posters/tintin.jpg")
+                %h3
+                  %strong Tint&iacute;n
+                %time(datetime="2011") 2011
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="totoro" src="images/posters/totoro.jpg")
+                %h3
+                  %strong Totoro
+                %time(datetime="1988") 1988
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %img(alt="vengadores" src="images/posters/vengadores.jpg")
+                %h3
+                  %strong Vengadores
+                %time(datetime="2012") 2012
+                %ul
+                  %li loren ipsum dolor dit amet consecteur...
+                  %li
+                    %a(href="#") M&aacute;s
+                  %li 2,5 sobre 5
+                  %li
+                    %a(href="#") 2,95€
+            %li
+              %hr
+          .more
+            %p Tenemos 4526 referencias
+            %a(href="#") VER M&aacute;S
+      / /catalogue section
+      / publishes section
+      %section.producers
+        %h2 Producers
+        %ul
+          %li
+            %span Dreamworks
+          %li
+            %span Filmax
+          %li
+            %span Miramax
+          %li
+            %span Universal
+          %li
+            Otras distribuidoras
+      / /publishes section
+      / steps
+      %section.steps
+        %h2 Steps
+        %ol
+          %li
+            %span star
+          %li
+            %h3 Elige tu pel&iacute;cula
+          %li
+            %p Lorem ipsum dolor sit amtet, consecteur  adipiscing elit, sed do euismod tempor
+        %ol
+          %li
+            %span arrow
+          %li
+            %h3 C&oacute;mprala en un clic
+          %li
+            %p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        %ol
+          %li
+            %span play
+          %li
+            %h3 Elige tu pel&iacute;cula
+          %li
+            %p Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      / /steps
+    / main footer
+    %footer
+      %h2 PÁGINA
+      %ul
+        %li Blog
+        %li Prensa
+        %li Condiciones de uso
+        %li Privacidad
+        %li Soporte
+      %h2 CORPORATIVO
+      %ul
+        %li Nosotros
+        %li Contacto
+        %li
+          %a(href="#" lang="en") English site
+        %li
+          %a(href="#" lang="de") Deutsch Website
+        %li
+          Site
+          %a(href="#" lang="fr") français
+      %h2 SÍGUENOS
+      %ul
+        %li Facebook
+        %li Twitter
+        %li Pinterest
+      %h2 JALEO
+      %hr
+        %ul
+          %li &copy; Jaleo de España S.A.
+          %li Calle del Rey, 23
+          %li 28080 MADRID
+          %li 0034 555 55 65 85
+          %li
+            %a(href="mailto:info@jaleoapp.es") info@jaleoapp.es
+    / /main footer
 

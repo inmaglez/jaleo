@@ -2,17 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
-		<title>Jaleo videoclub online</title>
-		<meta name="author" content="Inma Glez">
-		<meta name="description" content="Jaleo videoclub web">
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="apple-touch-icon" href="#">
+	<title>Jaleo videoclub online</title>
+	<meta name="author" content="Inma Glez">
+	<meta name="description" content="Jaleo videoclub web">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="#">
 </head>
 <body>
 	<header>
 		<nav>
 			<ul>
-				<li><a href="index.html" > Jaleo</a></li>
+				<li><a href="index.html"> Jaleo</a></li>
 				<li><a href="#" >Películas</a></li>
 				<li><a href="#" >Series</a></li>
 				<li><a href="#" >Explora</a></li>
@@ -30,7 +30,7 @@
 				</time>. para verla cuantas veces, y tantos los dispositivos como quieras. 
 			</p>
 			<p>
-				¿Ya estás registrado? <strong>Inicia tu sesión</strong> ahora.
+				¿Ya estás registrado? <a href="#"><strong>Inicia tu sesión</strong></a> ahora.
 			</p>
 			<hr>
 			<form>
@@ -49,8 +49,14 @@
 			</form>
 			<hr>
 			<h2>Datos de pago</h2>
+			
 			<strong>2,95 <abbr title="euros">€</abbr></strong>
-			<input type="radio">Paypal
+			
+			<label for="radio-paypal">
+				<input id="radio-paypal" type="radio">Paypal
+			
+			</label>
+
 			<label for="payment-data"> 
 				<input id="payment-data" type="radio">Tarjeta de crédito
 			</label>	
@@ -84,7 +90,8 @@
 						<option>2015</option>
 						<option>2016</option>
 					</select>
-					<label for="cvv">CVV
+					<label for="cvv">
+						<abbr title="código de seguridad tarjeta credito" >CVV</abbr>
 						<input type="password" id="cvv">
 					</label>
 					
@@ -92,7 +99,9 @@
 			</form>
 
 			<div>
-				<input type="checkbox"> Recibir correos electrónicos ocasionales con noticias y novedades de Jaleo
+				<label for="newsletter">
+					<input id="newsletter" type="checkbox"> Recibir correos electrónicos ocasionales con noticias y novedades de Jaleo
+				</label>
 				<a class="btn" href="#">Registrate</a>
 				<p>
 					Al registrarte estás de acuerdo con nuestros <strong>términos de uso</strong> y <strong>política de privacidad</strong>.

@@ -3,13 +3,14 @@
   <head>
     <meta charset='utf-8'>
     <title>Jaleo videoclub online</title>
-    <meta content='Jaleo videoclub web' name='author'>
+    <meta content='Inma Glez' name='author'>
     <meta content='Jaleo videoclub web' name='description'>
     <link href='/favicon.ico' rel='shortcut icon'>
     <link href='#' rel='apple-touch-icon'>
   </head>
   <body>
-    <a href='#main'></a>
+    <a href='#main'>skip to content</a>
+    <!-- header -->
     <header>
       <nav>
         <ul>
@@ -31,30 +32,534 @@
         </ul>
       </nav>
     </header>
-    <div class='main' role='main'>
-      <section class='slider'>
-        <h1>Los Vengadores: La era de Ultrón</h1>
+    <!-- /header -->
+    <!-- section: hero section -->
+    <section class='slider'>
+      <h1>Los Vengadores: La Era de Ultrón</h1>
+      <ul>
+        <li>
+          <time datetime='2015'>2015</time>
+        </li>
+        <li>
+          <abbr title="mayores de">+</abbr>18
+        </li>
+        <li class='rate'>
+          <abbr lang="en" title="High Definition"> HD</abbr>
+        </li>
+        <li>
+          <time datetime='PT1H39M'>
+            1
+            <abbr title='hora'>h</abbr>
+            34
+            <abbr title='minutes'>min</abbr>
+          </time>
+        </li>
+        <li>2,5 sobre 5</li>
+      </ul>
+      <ul>
+        <li>
+          <a href='#'>
+            MÁS INFO
+          </a>
+        </li>
+        <li>
+          <a href='#'>
+            VER AHORA
+            <strong>2,95 &euro;</strong>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li class='navigation'>anterior</li>
+        <li class='navigation'>siguiente</li>
+      </ul>
+    </section>
+    <div id='main' role='main'>
+      <h2>Catálogo de películas Jaleo</h2>
+      <!-- catalogue section -->
+      <section class='catalogue'>
+        <form>
+          <fieldset>
+            <legend>Filtrar aqui</legend>
+            <!-- because we have two select for one legend -->
+            <label for='type'>Filtrar por</label>
+            <select id='type'>
+              <option>Tipo</option>
+              <option>Tipo1</option>
+              <option>Tipo2</option>
+            </select>
+            <label for='genero'>genero</label>
+            <select id='genero'>
+              <option>G&eacute;nero</option>
+              <option>G&eacute;nero1</option>
+              <option>G&eacute;nero2</option>
+            </select>
+            <label for='new-shoots'>
+              Solo novedades
+              <input id='new-shoots' type='checkbox'>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for='popular'>Ordenar por</label>
+            <select id='popular'>
+              <option>M&aacute;s populares</option>
+              <option>M&aacute;s populares 1</option>
+              <option>M&aacute;s populares 2</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <input type='submit'>
+          </fieldset>
+        </form>
+        <hr>
+          <ul>
+            <li>
+              <a href='#'>
+                <img alt='127 horas' src='images/posters/127-dias.jpg'>
+                  <h3>
+                    <strong>127 horas</strong>
+                  </h3>
+                  <time datetime='2010'>2010</time>
+                </img>
+              </a>
+              <ul>
+                <li>loren ipsum dolor dit amet consecteur...</li>
+                <li>
+                  <a href='#'>M&aacute;s</a>
+                </li>
+                <li>2,5 sobre 5</li>
+                <li>
+                  <a href='#'>2,95€</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <img alt='amelie' src='images/posters/amelie.jpg'>
+                <h3>
+                  <strong>Amelie</strong>
+                </h3>
+                <time datetime='2001'>2001</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <!-- repetir a partir de aqui -->
+              <img alt='image about a girl..' src='images/posters/american-beauty.jpg'>
+                <h3>
+                  <strong>American beauty</strong>
+                </h3>
+                <time datetime='1999'>1999</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>M&aacute;s</li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='apocalyse' src='images/posters/apocalypse-now.jpg'>
+                <h3>
+                  <strong>Apocalyse Now</strong>
+                </h3>
+                <time datetime='1979'>1979</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='avatar' src='images/posters/avatar.jpg'>
+                <h3>
+                  <strong>Avatar</strong>
+                </h3>
+                <time datetime='2009'>2009</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='batman' src='images/posters/batman.jpg'>
+                <h3>
+                  <strong>Batman</strong>
+                </h3>
+                <time datetime='1966'>1966</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              <img alt='cisne-negro' src='images/posters/cisne-negro.jpg'>
+                <h3>
+                  <strong>Cisne Negro</strong>
+                </h3>
+                <time datetime='2010'>2010</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='dracula' src='images/posters/dracula.jpg'>
+                <h3>
+                  <strong>Dr&aacute;cula</strong>
+                </h3>
+                <time datetime='1931'>1931</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='silencio-corderos' src='images/posters/el-silencio-de-los-corderos.jpg'>
+                <h3>
+                  <strong>El Silencio de los Corderos</strong>
+                </h3>
+                <time datetime='1991'>1991</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='et' src='images/posters/et.jpg'>
+                <h3>
+                  <strong>E.T.</strong>
+                </h3>
+                <time datetime='1982'>1982</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='her' src='images/posters/her.jpg'>
+                <h3>
+                  <strong>Her</strong>
+                </h3>
+                <time datetime='2013'>2013</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='malefica' src='images/posters/malefica.jpg'>
+                <h3>
+                  <strong>Mal&eacute;fica</strong>
+                </h3>
+                <time datetime='2014'>2014</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              <img alt='parque-jurasico' src='images/posters/parque-jurasico.jpg'>
+                <h3>
+                  <strong>Parque Jur&aacute;sico</strong>
+                </h3>
+                <time datetime='1993'>1993</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='selma' src='images/posters/selma.jpg'>
+                <h3>
+                  <strong>Selma</strong>
+                </h3>
+                <time datetime='2014'>2014</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='sinsajo' src='images/posters/sinsajo.jpg'>
+                <h3>
+                  <strong>Sinsajo</strong>
+                </h3>
+                <time datetime='2014'>2014</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='tintin' src='images/posters/tintin.jpg'>
+                <h3>
+                  <strong>Tint&iacute;n</strong>
+                </h3>
+                <time datetime='2011'>2011</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='totoro' src='images/posters/totoro.jpg'>
+                <h3>
+                  <strong>Totoro</strong>
+                </h3>
+                <time datetime='1988'>1988</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <img alt='vengadores' src='images/posters/vengadores.jpg'>
+                <h3>
+                  <strong>Vengadores</strong>
+                </h3>
+                <time datetime='2012'>2012</time>
+                <ul>
+                  <li>loren ipsum dolor dit amet consecteur...</li>
+                  <li>
+                    <a href='#'>M&aacute;s</a>
+                  </li>
+                  <li>2,5 sobre 5</li>
+                  <li>
+                    <a href='#'>2,95€</a>
+                  </li>
+                </ul>
+              </img>
+            </li>
+            <li>
+              <hr>
+            </li>
+          </ul>
+          <div class='more'>
+            <p>Tenemos 4526 referencias</p>
+            <a href='#'>VER M&aacute;S</a>
+          </div>
+        </hr>
+      </section>
+      <!-- /catalogue section -->
+      <!-- publishes section -->
+      <section class='producers'>
+        <h2>Producers</h2>
         <ul>
           <li>
-            <time datetime='2015'>2015</time>
+            <span>Dreamworks</span>
           </li>
           <li>
-            <abbr title="mayores de">+</abbr>18
-          </li>
-          <li class='rate'>
-            <abbr title="High Definition" lang="en">HD</abbr>
+            <span>Filmax</span>
           </li>
           <li>
-            <time datetime='PT1H39M'>
-              1 <abbr title="hora">h</abbr> 34 <abbr title="minutes">min</abbr>
-            </time>
+            <span>Miramax</span>
           </li>
           <li>
-            2,5 sobre 5
+            <span>Universal</span>
+          </li>
+          <li>
+            Otras distribuidoras
           </li>
         </ul>
       </section>
+      <!-- /publishes section -->
+      <!-- steps -->
+      <section class='steps'>
+        <h2>Steps</h2>
+        <ol>
+          <li>
+            <span>star</span>
+          </li>
+          <li>
+            <h3>Elige tu pel&iacute;cula</h3>
+          </li>
+          <li>
+            <p>Lorem ipsum dolor sit amtet, consecteur  adipiscing elit, sed do euismod tempor</p>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            <span>arrow</span>
+          </li>
+          <li>
+            <h3>C&oacute;mprala en un clic</h3>
+          </li>
+          <li>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            <span>play</span>
+          </li>
+          <li>
+            <h3>Elige tu pel&iacute;cula</h3>
+          </li>
+          <li>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </li>
+        </ol>
+      </section>
+      <!-- /steps -->
     </div>
-    <footer></footer>
+    <!-- main footer -->
+    <footer>
+      <h2>PÁGINA</h2>
+      <ul>
+        <li>Blog</li>
+        <li>Prensa</li>
+        <li>Condiciones de uso</li>
+        <li>Privacidad</li>
+        <li>Soporte</li>
+      </ul>
+      <h2>CORPORATIVO</h2>
+      <ul>
+        <li>Nosotros</li>
+        <li>Contacto</li>
+        <li>
+          <a href='#' lang='en'>English site</a>
+        </li>
+        <li>
+          <a href='#' lang='de'>Deutsch Website</a>
+        </li>
+        <li>
+          Site
+          <a href='#' lang='fr'>français</a>
+        </li>
+      </ul>
+      <h2>SÍGUENOS</h2>
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Pinterest</li>
+      </ul>
+      <h2>JALEO</h2>
+      <hr>
+        <ul>
+          <li>&copy; Jaleo de España S.A.</li>
+          <li>Calle del Rey, 23</li>
+          <li>28080 MADRID</li>
+          <li>0034 555 55 65 85</li>
+          <li>
+            <a href='mailto:info@jaleoapp.es'>info@jaleoapp.es</a>
+          </li>
+        </ul>
+      </hr>
+    </footer>
+    <!-- /main footer -->
   </body>
 </html>
